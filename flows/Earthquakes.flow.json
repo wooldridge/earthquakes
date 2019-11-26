@@ -1,5 +1,5 @@
 {
-  "name" : "Earthquakes",
+  "name" : "EarthquakesFlow",
   "description" : "",
   "batchSize" : 100,
   "threadCount" : 4,
@@ -14,7 +14,7 @@
         "additionalCollections" : [ ],
         "headers" : {
           "sources" : [ {
-            "name" : "Earthquakes"
+            "name" : "EarthquakesFlow"
           } ],
           "createdOn" : "currentDateTime",
           "createdBy" : "currentUser"
@@ -37,9 +37,9 @@
       "stepDefinitionName" : "default-ingestion",
       "stepDefinitionType" : "INGESTION",
       "fileLocations" : {
-        "inputFilePath" : "/Users/mwooldri/projects/earthquakes/data",
+        "inputFilePath" : "dataset",
         "inputFileType" : "csv",
-        "outputURIReplacement" : "/Users/mwooldri/projects/earthquakes/data,'/earthquakes'",
+        "outputURIReplacement" : ".*dataset,'/earthquakes'",
         "separator" : ","
       }
     },
