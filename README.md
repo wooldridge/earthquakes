@@ -1,14 +1,16 @@
 # Data Hub Example: Earthquakes Since 2000
 
+This project is be used with [MarkLogic Data Hub](https://github.com/marklogic/marklogic-data-hub).
+
 The `Earthquakes` flow in this example does the following:
 
 - Loads a CSV file listing the significant earthquakes since the year 2000.
-- Maps the data to an Earthquake entity. 
+- Maps the data to an `Earthquake` entity. 
 - As part of the mapping, transforms some of the properties with custom mapping functions.
 
 ### Mapping Definition
 
-The custom mapping definition is in the following file:
+The mapping definition is in the following file:
 
 `mappings/Earthquakes-EarthquakesMap/Earthquakes-EarthquakesMap-0.mapping.json`
 
