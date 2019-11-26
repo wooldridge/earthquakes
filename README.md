@@ -1,8 +1,8 @@
 # Data Hub Example: Earthquakes Since 2000
 
-This project is be used with [MarkLogic Data Hub](https://github.com/marklogic/marklogic-data-hub).
+This example project is to be used with [MarkLogic Data Hub](https://github.com/marklogic/marklogic-data-hub).
 
-The `Earthquakes` flow in this example does the following:
+The `Earthquakes` flow in this project does the following:
 
 - Loads a CSV file listing the significant earthquakes since the year 2000.
 - Maps the data to an `Earthquake` entity. 
