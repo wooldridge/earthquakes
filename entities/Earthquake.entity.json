@@ -1,0 +1,63 @@
+{
+  "info" : {
+    "title" : "Earthquake",
+    "version" : "0.0.1",
+    "baseUri" : "http://example.org/"
+  },
+  "definitions" : {
+    "Earthquake" : {
+      "required" : [ ],
+      "pii" : [ ],
+      "elementRangeIndex" : [ ],
+      "rangeIndex" : [ ],
+      "wordLexicon" : [ ],
+      "properties" : {
+        "id" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "datetime" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "ts" : {
+          "datatype" : "int"
+        },
+        "magnitude" : {
+          "datatype" : "decimal"
+        },
+        "country" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "state" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "location" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "latitude" : {
+          "datatype" : "decimal"
+        },
+        "longitude" : {
+          "datatype" : "decimal"
+        },
+        "regioncode" : {
+          "datatype" : "int"
+        },
+        "region" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "deaths" : {
+          "datatype" : "int"
+        },
+        "tsunami" : {
+          "datatype" : "boolean"
+        }
+      }
+    }
+  }
+}
