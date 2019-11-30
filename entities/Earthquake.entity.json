@@ -38,11 +38,11 @@
           "datatype" : "string",
           "collation" : "http://marklogic.com/collation/codepoint"
         },
-        "latitude" : {
-          "datatype" : "decimal"
-        },
-        "longitude" : {
-          "datatype" : "decimal"
+        "coordinates" : {
+          "datatype" : "array",
+          "items" : {
+            "datatype" : "decimal"
+          }
         },
         "regioncode" : {
           "datatype" : "int"
