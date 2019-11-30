@@ -8,7 +8,7 @@
     "Earthquake" : {
       "required" : [ ],
       "pii" : [ ],
-      "elementRangeIndex" : [ ],
+      "elementRangeIndex" : [ "ts", "country", "state", "region" ],
       "rangeIndex" : [ ],
       "wordLexicon" : [ ],
       "properties" : {
