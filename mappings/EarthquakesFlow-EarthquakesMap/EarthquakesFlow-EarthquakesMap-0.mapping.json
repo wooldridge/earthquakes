@@ -1,0 +1,48 @@
+{
+  "lang" : "zxx",
+  "name" : "EarthquakesFlow-EarthquakesMap",
+  "description" : "Default description",
+  "version" : 1,
+  "targetEntityType" : "http://example.org/Earthquake-0.0.1/Earthquake",
+  "sourceContext" : "/",
+  "sourceURI" : "/earthquakes/845f165d-74e2-4957-aa8a-d3d6e3bee2da.json",
+  "properties" : {
+    "id" : {
+      "sourcedFrom" : "I_D"
+    },
+    "datetime" : {
+      "sourcedFrom" : "dateToISO(YEAR,MONTH,DAY,HOUR,MINUTE,SECOND)"
+    },
+    "ts" : {
+      "sourcedFrom" : "dateToEpoch(YEAR,MONTH,DAY,HOUR,MINUTE,SECOND)"
+    },
+    "magnitude" : {
+      "sourcedFrom" : "EQ_PRIMARY"
+    },
+    "country" : {
+      "sourcedFrom" : "COUNTRY"
+    },
+    "state" : {
+      "sourcedFrom" : "STATE"
+    },
+    "location" : {
+      "sourcedFrom" : "LOCATION_NAME"
+    },
+    "coordinates" : {
+      "sourcedFrom" : "LATITUDE,LONGITUDE"
+    },
+    "regioncode" : {
+      "sourcedFrom" : "REGION_CODE"
+    },
+    "region" : {
+      "sourcedFrom" : "codeToRegion(REGION_CODE)"
+    },
+    "deaths" : {
+      "sourcedFrom" : "if (TOTAL_DEATHS eq '') then 0 else TOTAL_DEATHS"
+    },
+    "tsunami" : {
+      "sourcedFrom" : "if (FLAG_TSUNAMI eq 'Tsu') then true() else false()"
+    }
+  },
+  "namespaces" : { }
+}
