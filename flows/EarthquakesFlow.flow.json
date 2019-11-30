@@ -31,7 +31,7 @@
         "user" : "",
         "runBefore" : false
       },
-      "retryLimit" : 0,
+      "retryLimit" : null,
       "batchSize" : 100,
       "threadCount" : 4,
       "stepDefinitionName" : "default-ingestion",
@@ -50,8 +50,8 @@
         "additionalCollections" : [ ],
         "sourceQuery" : "cts.collectionQuery([\"EarthquakesIngest\"])",
         "mapping" : {
-          "name" : "Earthquakes-EarthquakesMap",
-          "version" : 9
+          "name" : "EarthquakesFlow-EarthquakesMap",
+          "version" : 1
         },
         "targetEntity" : "Earthquake",
         "sourceDatabase" : "data-hub-STAGING",
@@ -67,7 +67,7 @@
         "user" : "",
         "runBefore" : false
       },
-      "retryLimit" : null,
+      "retryLimit" : 0,
       "batchSize" : 100,
       "threadCount" : 4,
       "stepDefinitionName" : "entity-services-mapping",
