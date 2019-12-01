@@ -5,13 +5,28 @@
   "version" : 1,
   "targetEntityType" : "http://example.org/Earthquake-0.0.1/Earthquake",
   "sourceContext" : "/",
-  "sourceURI" : "/earthquakes/845f165d-74e2-4957-aa8a-d3d6e3bee2da.json",
+  "sourceURI" : "",
   "properties" : {
     "id" : {
       "sourcedFrom" : "I_D"
     },
-    "datetime" : {
-      "sourcedFrom" : "dateToISO(YEAR,MONTH,DAY,HOUR,MINUTE,SECOND)"
+    "year" : {
+      "sourcedFrom" : "YEAR"
+    },
+    "month" : {
+      "sourcedFrom" : "MONTH"
+    },
+    "day" : {
+      "sourcedFrom" : "DAY"
+    },
+    "hour" : {
+      "sourcedFrom" : "HOUR"
+    },
+    "minute" : {
+      "sourcedFrom" : "MINUTE"
+    },
+    "second" : {
+      "sourcedFrom" : "SECOND"
     },
     "ts" : {
       "sourcedFrom" : "dateToEpoch(YEAR,MONTH,DAY,HOUR,MINUTE,SECOND)"

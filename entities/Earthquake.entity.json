@@ -8,7 +8,7 @@
     "Earthquake" : {
       "required" : [ ],
       "pii" : [ ],
-      "elementRangeIndex" : [ "ts", "country", "state", "region" ],
+      "elementRangeIndex" : [ "year", "ts", "magnitude", "country", "state", "region" ],
       "rangeIndex" : [ ],
       "wordLexicon" : [ ],
       "properties" : {
@@ -16,9 +16,23 @@
           "datatype" : "string",
           "collation" : "http://marklogic.com/collation/codepoint"
         },
-        "datetime" : {
-          "datatype" : "string",
-          "collation" : "http://marklogic.com/collation/codepoint"
+        "year" : {
+          "datatype" : "int"
+        },
+        "month" : {
+          "datatype" : "int"
+        },
+        "day" : {
+          "datatype" : "int"
+        },
+        "hour" : {
+          "datatype" : "int"
+        },
+        "minute" : {
+          "datatype" : "int"
+        },
+        "second" : {
+          "datatype" : "decimal"
         },
         "ts" : {
           "datatype" : "int"

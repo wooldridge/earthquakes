@@ -5,11 +5,6 @@ function dateToEpoch(year, month, day, hour, minute, second) {
 	return seconds;
 }
 
-function dateToISO(year, month, day, hour, minute, second) {
-	let iso = new Date(year, month-1, day, hour, minute, second).toISOString();
-	return iso;
-}
-
 const regionMap = {
 	10: "Central, Western and S. Africa",
 	15: "Northern Africa",
@@ -38,6 +33,5 @@ function codeToRegion(code) {
 
 module.exports = {
 	dateToEpoch: dateToEpoch,
-	dateToISO: dateToISO,
 	codeToRegion: codeToRegion
 };
